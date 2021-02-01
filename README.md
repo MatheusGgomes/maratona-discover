@@ -2,9 +2,9 @@
   <img alt="dev.finances" title="dev.finances" src=".github/logo.svg" width="220px" />
 </h1>
 
-<p align="center">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a> |
-  <a href="#-projeto">Projeto</a> |
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#-minhas-alterações">Minhas alterações</a>
 </p>
 
