@@ -139,11 +139,21 @@ const DOM = {
 
 const Utils = {
   formatAmount(value) {
-    value = Number(value.replace(/\,\./g, "")) * 100
-    
-    return value;
+    const splitedValue = value.split(".")
+    if ( splitedValue.length > 1) {
+      
+      if (splitedValue[1].length == 1) {
+        value = Number(value.replace(/[.]/g, "")) * 10
+      }
+      else {
+        value = Number(value.replace(/[.]/g, ""))
+      }    
+    }
+    else {
+      value = Number(value) * 100
+    }
+    return value;  
   },
-
   formatDate(date) {
     const splittedDate = date.split("-") 
     return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`;
@@ -152,7 +162,7 @@ const Utils = {
   formatCurrecy(value) {
     const signal = Number(value) < 0 ? "-" : ""
 
-    value = String(value).replace(/\D/g, "")
+    value = String(value).replace(/\D/g, "")  
 
     value = Number(value) / 100
 

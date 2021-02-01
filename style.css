@@ -135,6 +135,15 @@ button:hover {
   opacity: 1;
 }
 
+#incomeDisplay {
+  color: var(--light-green
+  );
+}
+#expenseDisplay {
+  color: var(--red
+  );
+}
+
 /*  ======================================== */
 
 .button.cancel {
@@ -401,4 +410,13 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+  .modal {
+    width: 540px;
+  }
+
+  #form {
+    max-width: 500px;
+  }
+ 
 }
